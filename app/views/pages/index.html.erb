@@ -1,0 +1,73 @@
+
+<body>
+
+<div class="header-100-perc">
+<div class="header">
+<h1> NueDrops </h1>
+<div class="login">
+    <div class="row" style="width: 470px;">
+		<div class="col-md-4 col-md-offset-4" style="width: 91%;margin-left: 0;">
+    		<div class="panel panel-default">
+			  	
+			  	<div class="panel-body">
+			    	<%= form_for(User.new, :url => session_path(User.new)) do |f| %>
+                    <fieldset>
+			    	  	<div class="form-group">
+			    		     <%= f.email_field :email, :autofocus => true,:class => 'form-control',:placeholder=>"Email" %>
+			    		</div>
+			    		<div class="form-group">
+			    			<%= f.password_field :password ,:class => 'form-control' ,:placeholder=>"Password" %>
+			    		</div>
+			    		<div class="checkbox">
+			    	    	<label>
+			    	    		<input name="remember" type="checkbox" value="Remember Me"> Remember Me
+			    	    	</label>
+			    	    </div>
+			    	    </div>
+			    		<%= f.submit "Sign in" ,:class=>'btn btn-lg btn-success btn-block' %>
+			    		<% end %>
+			    	</fieldset>
+			      	</form>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</div>
+</div>
+
+<div class="wrapper">
+<div class="content">
+<div class="drop-images"><img src="assets/drop.png" width="450" height="219" /></div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
+      <legend style="margin-bottom: 10px;"><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend>
+     
+      	<%= form_for(User.new, :url => registration_path(User.new)) do |f| %>
+        
+        <%= f.email_field :email, :autofocus => true, :class => 'form-control',:placeholder => 'Email' %>
+          <%= f.password_field :password ,:class => 'form-control',:placeholder => 'Password'  %>
+            <%= f.password_field :password_confirmation,:class => 'form-control' ,:placeholder => 'Password' %>
+       
+        <br>
+        <%= f.submit "Sign up" ,:class=>"btn btn-lg btn-primary btn-block" %>
+        
+        <% end %>
+        
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="footer-100-per">
+<div class="footer">
+<p>Copyright © 2013 NueDrops</p>
+<p style="float:right;">Designed by <a href="https://www.facebook.com/nahaz.meawo?ref=tn_tnmn" target="_blank">NaHaZ Meawo</a></p>
+</div>
+</div>
+
+</body>
+</html>

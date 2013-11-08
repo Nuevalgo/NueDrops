@@ -1,0 +1,33 @@
+
+<link href='http://fonts.googleapis.com/css?family=Rationale' rel='stylesheet' type='text/css'>
+<div class="header-100-perc">
+<div class="header">
+<h1> NueDrops </h1>
+<%= link_to('Logout', destroy_user_session_path, :method => :delete, :class => 'logout') %>      
+ </div>
+</div>
+
+<div class="wrapper">
+<div class="" align="center" style="margin-top:10px;">
+	
+		<div class="connect-drop-base">
+			<img src="/assets/dropbox-logo-large.png" width="1000" height="339" />
+			
+		<%= link_to '', @authorize_url ,:target=>"_new",:class=>'conect-btn' %>
+		<%= form_tag(page_connect_path(current_user)) do %>
+		<br>
+			
+		<div style="width:50% margin:auto;" >
+		<input type="text" class="form-control" name="code" placeholder="Return Code">
+		<input type="submit" value="Submit Code" class="btn btn-lg btn-success btn-block" />
+		</div>
+		<% end -%>
+			</div>
+</div>
+</div>
+<!-- <div class="footer-100-per">
+<div class="footer">
+<p>Copyright © 2013 NueDrops</p>
+<p style="float:right;">Designed by <a href="https://www.facebook.com/nahaz.meawo?ref=tn_tnmn" target="_blank">NaHaZ Meawo</a></p>
+</div>
+</div> -->

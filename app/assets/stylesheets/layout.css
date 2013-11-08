@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#18a4ed url(/assets/cloud.png) repeat-y top left;
+	padding-top:0 !important;
+}
+.header-100-perc{
+	width:100%;
+	min-height:100px;
+	overflow:hidden;
+	background-color:#55bcf2;
+}
+.header-100-perc .header {
+	width:1000px;
+	height:auto;
+	margin:0 auto;
+	overflow:hidden;
+}
+.header-100-perc .header h1{
+	font-family: 'Rationale', sans-serif;
+	font-size:55px;
+	font-weight:normal;
+	color:#fff;
+	float:left;
+	margin:15px 0 0 0px;
+	text-shadow: -3px 2px 2px rgba(150, 150, 150, 1);
+	background-image:url(/assets/logo.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	padding-bottom:10px; 
+	padding-right:40px;
+}
+.header-100-perc .header .login{
+	min-width:120px;
+	height:auto;
+	position:fixed;
+	z-index:150;
+	right:188px;
+	top:0px;
+}
+
+.wrapper{
+	width:1000px;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+}
+.wrapper .content {
+	width:1000px;
+	height:auto;
+	margin:0 auto;
+	overflow:hidden;
+	padding-top:125px;
+}
+.wrapper .content .drop-images{
+	width:450px;
+	height:auto;
+	float:left;
+	margin-right: 113px;
+}
+.wrapper .content .drop-images img{
+	border-radius:10px;
+	-moz-border-radius:10px;	
+	-webkit-border-radius:10px;
+}
+
+.footer-100-per{
+	width:100%;
+	min-height:55px;
+	overflow:hidden;
+	position:fixed;
+	bottom:0;
+	background-color:#428bca;
+	border-top:3px dashed #fff;
+	border-bottom:3px dashed #fff;
+}
+.footer-100-per .footer {
+	width:1000px;
+	height:auto;
+	margin:0 auto;
+}
+.footer-100-per .footer p{
+	font-family: 'Rationale', sans-serif;
+	font-size:15px;
+	font-weight:normal;
+	color:#fff;
+	float:left;
+	margin: 15px 0 0 2px;
+}
+.footer-100-per .footer a{
+	color:#fff;
+}
+.footer-100-per .footer a:hover{
+	color:#f00;
+}
+
+.connect-drop-base{
+	width:1000px;
+	height:auto;
+	float:left;
+	position:relative;
+	border:3px dashed #fff;
+	border-radius:10px;
+	-moz-border-radius:10px;	
+	-webkit-border-radius:10px;	
+	text-align:center;
+}
+.connect-drop-base img{
+	border-radius:10px;
+	-moz-border-radius:10px;	
+	-webkit-border-radius:10px;	
+}
+.conect-btn{
+	width:154px;
+	height:36px;
+	background-image:url(/assets/connect-to.png);
+	background-repeat:no-repeat;
+	border:1px dashed #fff;
+	position:absolute;
+	bottom:90px;
+	left:450px;
+	background-color:transparent;
+	cursor:pointer;
+	z-index:155;
+	border-radius:8px;
+	-moz-border-radius:8px;	
+	-webkit-border-radius:8px;	
+	opacity:1;
+}
+.conect-btn:active{
+	opacity:0.8;
+}
+
+.logout{
+	font-family: 'Rationale', sans-serif;
+	font-size:15px;
+	font-weight:normal;
+	color:#fff;
+	float:right;
+	margin:35px 5px 0 0;
+}
+.logout:hover{
+	color:#3276b1;
+	text-decoration:none;
+}
+
+	
+
+
+
+
+
